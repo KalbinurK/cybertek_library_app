@@ -20,7 +20,7 @@ public class PageNavigation_StepDefi {
     @When("User click on {string} link")
     public void user_click_on_link(String link) {
 
-        BrowserUtils.waitForVisibility(landingPage.dashboardPageLink,5);
+        BrowserUtils.waitForVisibility(landingPage.dashboardPageLink,5);  // fluent way 
         switch (link.toLowerCase()){   //what ever we pass in the feature file, click that one we passed.
             case "dashboard":
                 landingPage.dashboardPageLink.click();
